@@ -8,4 +8,4 @@ Suggestions / discussion for improvement are most welcome. I am relatively new t
 
 ## Next:
 ### Standard Package Layout
-The next thing I would like to add to this template is a seed for using [Ben Johnson's Standard Package Layout] (https://medium.com/@benbjohnson/standard-package-layout-7cdbc8391fc1).  I have been looking for a good way to organize Go code for a while and after reading that post that TJHolowaychuk sortof-endorsed, have to admit looks like the best way I've seen yet.
+The next thing I would like to add to this template is a seed for using [Ben Johnson's Standard Package Layout](https://medium.com/@benbjohnson/standard-package-layout-7cdbc8391fc1).  I have been looking for a good way to organize Go code for a while and after reading that post that TJHolowaychuk sortof-endorsed, have to admit looks like the best way I've seen yet.

@@ -15,6 +15,7 @@ services:
       - 3000:3000
     depends_on:
       - pg
+    # Comment out this line if you need to test crontab
     command: ['go', 'run', 'main.go']
 
   pg:
