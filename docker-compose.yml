@@ -1,0 +1,30 @@
+version: '2'
+
+services:
+  go:
+    build: ./go
+    volumes:
+      - ./go/app:/go/src/domain/user/app
+    environment:
+      - PORT=3000
+      - DB_USER=db_user
+      - DB_PASSWORD=secret
+      - DB_NAME=app_dev
+      - DB_HOST=pg
+    ports:
+      - 3000:3000
+    depends_on:
+      - pg
+    command: ['go', 'run', 'main.go']
+
+  pg:
+    image: postgres
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_DB=app_dev
+      - POSTGRES_USER=db_user
+      - POSTGRES_PASSWORD=secret
+    #volumes:
+      #- /usr/local/docker_mounts/project:/var/lib/postgresql/data
+

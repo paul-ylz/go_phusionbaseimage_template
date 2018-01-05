@@ -1,0 +1,5 @@
+# sample crontab, add away
+# This logs to process 1 / file descriptor 1 (STDOUT on Docker)
+* * * * * root . /etc/container_environment.sh; echo 'hello world' >> /proc/1/fd/1 2>&1
+# An empty line is required at the end of this file to be a valid cron file
+

@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  go:
+    build: ./go
+    environment:
+      - PORT=3000
+      - GIN_MODE=release
+    ports:
+      - 3000:3000
+    restart: always
